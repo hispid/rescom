@@ -7,6 +7,7 @@
 
 void replaceAll(std::string& str, char toReplace, char replacement);
 std::string toUpper(std::string str);
+std::string toLower(std::string str);
 std::string_view trim(std::string_view view);
 std::string_view removeComment(std::string_view view, char const* oneLineCommentStart);
 

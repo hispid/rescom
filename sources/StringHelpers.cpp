@@ -17,6 +17,13 @@ std::string toUpper(std::string str)
     return str;
 }
 
+std::string toLower(std::string str)
+{
+  std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c){ return static_cast<char>(std::tolower(c)); });
+
+  return str;
+}
+
 std::string_view trim(std::string_view view)
 {
     static constexpr char const* const Spaces = " \t\v\f\r\n";
